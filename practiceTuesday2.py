@@ -22,7 +22,23 @@ def main():
     
 main()
 '''
+
+def main():
+    tempC = input("What is the temperature in Celsius?")
+    tempC = (int(tempC))
+    # multiply by 1.8 (or 9/5) and add 32
+    tempF = (tempC * 1.8 + 32) 
+    print (tempF)
+    
+ main()   
+    
+    
+    
+    
+'''
 a=input("First")
 b=input("Second")
 c=a/b
 print(c)
+
+main()

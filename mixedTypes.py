@@ -25,25 +25,25 @@ the rest should work from there.
 
 '''
 
-#def mixedtypelist():    
+def mixedtypelist():    
 
 
-mixedlist = [1,2,"glove","hat",15,"tomato"] # here's my mixed-type list
-#print(mixedlist)                           # just checking - it prints
-intlist=0                       #starts at zero then a gets added to it each time through the for loop
-strlist=[]                    #i want to start with an empty list, then add each string that the for loop finds
-for a in (mixedlist):                       # for loop
-    #print(type(a))                        # just testing
-    if type(a) == int:                      #--if it's an int...
-        intlist=a+intlist           #  1st integer + 0, then that gets added to next integer, etc.
-    elif type(a) == str:                    #--if it's a str...
-        strlist.append(a)        #if it's a string, add it to strlist
-    else:
-        continue
-print("The sum of all the integers is " + str(intlist))
-print("The list of all the strings is " + str(strlist))
+    mixedlist = [1,2,"glove","hat",15,"tomato"] # here's my mixed-type list
+    #print(mixedlist)                           # just checking - it prints
+    intlist=0                       #starts at zero then a gets added to it each time through the for loop
+    strlist=[]                    #i want to start with an empty list, then add each string that the for loop finds
+    for a in (mixedlist):                       # for loop
+        #print(type(a))                        # just testing
+        if type(a) == int:                      #--if it's an int...
+            intlist=a+intlist           #  1st integer + 0, then that gets added to next integer, etc.
+        elif type(a) == str:                    #--if it's a str...
+            strlist.append(a)        #if it's a string, add it to strlist
+        else:
+            continue
+    print("The sum of all the integers is " + str(intlist))
+    print("The list of all the strings is " + str(strlist))
 
-
+mixedtypelist() 
 
 '''
 #print (mixedlist[1])
